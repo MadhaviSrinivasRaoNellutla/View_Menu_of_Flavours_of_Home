@@ -1,0 +1,120 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf5;
+  color: #333;
+}
+
+/* Header layout with flexbox */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Helps on smaller screens */
+  text-align: center;
+  background: linear-gradient(135deg, #ffdede, #ffe6cb, #ffffcf, #dbffdb, #f9f9ff, #f6e6ff);
+}
+
+/* Logo image styling */
+.logo {
+  width: 150px; /* Small size */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Text part next to the logo */
+.header-text h1 {
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  font-size: 2.0rem;
+  flex: 1;
+
+}
+
+.header-text .tagline {
+  font-style: italic;
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Category sections */
+
+.category {
+  background-color: #ffe9d0;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category h2 {
+  color: #a0190f;
+  margin-top: 5px;
+  line-height: 1.25cm;
+}
+
+.category ul {
+  list-style-type: square;
+  padding-left: 40px;
+  font-size: 1.25rem;
+  line-height: 1.25cm;
+}
+
+/* Notes section */
+.notes {
+  background-color: #d5fdd0;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25cm;
+}
+
+.image-carousel {
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff8e1;
+  padding: 20px 0;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  animation: scrollImages 20s linear infinite;
+}
+
+.carousel-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollImages {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Footer */
+footer {
+  background-color: #f1ffb5;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 1rem;
+  text-align: center; /* Keeps general text centered */
+}
+
+.contact-info {
+  text-align: left; /* Only this part is left aligned */
+  max-width: 600px;
+  margin: 0 auto;
+}
